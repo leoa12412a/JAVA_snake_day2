@@ -28,7 +28,7 @@
   Timer timer = new Timer
   ```
   <br>
-  設定排程有幾種方法
+  <strong>設定排程有幾種方法</strong>
   
   timer.schedule後面加上(task,delay,period)，就會在延遲dalay秒後，執行task，接下來每間格period執行一次task，根據後面的參數會有不同的排程方式
   
