@@ -1,1 +1,1 @@
-# JAVA_snake_day2
+## JAVA_snake_day2
