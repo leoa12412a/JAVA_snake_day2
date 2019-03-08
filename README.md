@@ -82,7 +82,7 @@
   ##Java Random
   
    這個方法是讓java產生某種類型亂數，但是亂數開頭都是從0開始，如果不想從0開始的話就需要加上+x個數字
-   如下圖random.nextInt(20)產生0~19總共20個數值其中一個的亂數，但是如果+1的話就是1~20共20個個數值其中一個的亂數。
+   如下圖random.nextInt(20)產生0到19總共20個數值其中一個的亂數，但是如果+1的話就是1到20共20個個數值其中一個的亂數。
    ```
     Random random = new Random();
     System.out.println(random.nextInt(20+1);
