@@ -4,6 +4,32 @@
 
   當我們程式出現new得時候，程式會跟記憶體申請記憶體空間，而static變數就是在載入程式後會主動配給記憶體給程式(僅一次)，後續無論實例化多少次，記憶體位置   都一樣。所以我們不同的function只有抓取同一個記憶體位置就可抓到同樣的資料。
   
+  另外我們也可以用宣告class的方式，藉由此方式可以宣告出你想要的class，就可以互相傳值
+  
+  Example : 下圖的test1.java就藉由宣告test2為mytest，就可以將變數aaa傳入test2的ddt函式裡面
+  
+  ```
+  test2.java
+  public class test2
+  {
+      public void ddt(int i)
+      {
+          System.out.println(i);
+      }
+  }
+
+  test1.java
+  public class test1
+  {
+      public void main(String args[])
+      {
+          test2 mytest = new test2;
+          int aaa = 3;
+          mytest.ddt(aaa); //這樣就傳進去了呀...
+      }
+  }
+  ```
+  
 ## JavaTimer
   
   首先我們需要自行撰寫一個繼承了 TimerTask 的 class，其中必須覆寫 run()，並在裡面填上我們要執行的工作，而下圖的工作就是印出 "現在時間："+現在的時間
